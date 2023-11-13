@@ -48,6 +48,23 @@ main {
 	overflow: hidden;
 }
 /******************************************************************/
+@keyframes circle-animation {
+	0% {
+		transform: translate(0.5rem, 0);
+	}
+	25% {
+		transform: translate(0, 0.5rem);
+	}
+	50% {
+		transform: translate(-0.5rem, 0);
+	}
+	75% {
+		transform: translate(0, -0.5rem);
+	}
+	100% {
+		transform: translate(0.5rem, 0);
+	}
+}
 a {
 	color: inherit;
 	text-decoration: none;
@@ -129,6 +146,9 @@ a.btn:hover {
 	width: 72.9rem;
 	z-index: 20;
 }
+.main-hero img {
+	animation: circle-animation 10s linear infinite;
+}
 .main-content {
 	position: absolute;
 	z-index: 30;
@@ -171,12 +191,19 @@ a.btn:hover {
 	/* color: transparent; */
 	-webkit-text-stroke: 1px #fff;
 	-webkit-text-fill-color: transparent;
+	transition: all ease 1s;
 }
 .rainbow-text::before {
+	top: 0;
+}
+.rainbow-text::after {
+	bottom: 0;
+}
+.rainbow-text.aos-animate::before {
 	/* top: 0; */
 	top: -6rem;
 }
-.rainbow-text::after {
+.rainbow-text.aos-animate::after {
 	/* bottom: 0; */
 	bottom: -6rem;
 }
@@ -185,6 +212,9 @@ a.btn:hover {
 	top: 150rem;
 	width: 53rem;
 	left: 7.5rem;
+}
+.info-img-1 img {
+	animation: circle-animation 10s linear infinite;
 }
 .info-content-1 {
 	position: absolute;
@@ -202,7 +232,9 @@ a.btn:hover {
 	right: 0;
 	top: 203rem;
 }
-
+.info-img-2 img {
+	animation: circle-animation 10s linear infinite;
+}
 .info-content-2 {
 	position: absolute;
 	top: 216rem;
@@ -213,17 +245,63 @@ a.btn:hover {
 	text-align: center;
 	color: #13fc2a;
 }
+@keyframes main-footer {
+	0% {
+		transform: translateY(0);
+	}
+	60% {
+		transform: translateY(0);
+	}
+	70% {
+		transform: translateY(-2rem);
+	}
+	80% {
+		transform: translateY(0);
+	}
+	90% {
+		transform: translateY(-1.2rem);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
 .main-footer {
 	position: absolute;
 	width: 30.8rem;
 	left: 13rem;
 	bottom: 17.5rem;
 }
+.main-footer img {
+	animation: main-footer 3s ease-in-out infinite;
+}
+@keyframes main-footer-shadow {
+	0% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(1);
+	}
+	70% {
+		transform: scale(0.85);
+	}
+	80% {
+		transform: scale(1);
+	}
+	90% {
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
 .main-footer-shadow {
 	position: absolute;
 	left: 14rem;
 	bottom: 10.5rem;
 	width: 29rem;
+}
+.main-footer-shadow img {
+	animation: main-footer-shadow 3s ease-in-out infinite;
 }
 .footer-socials {
 	display: flex;
@@ -238,4 +316,9 @@ a.btn:hover {
 	right: 6rem;
 	bottom: 4rem;
 	color: #583b3b;
+}
+.contact-btn {
+	position: absolute;
+	left: 40rem;
+	bottom: 20rem;
 }
