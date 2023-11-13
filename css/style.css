@@ -1,0 +1,241 @@
+@font-face {
+	font-family: cute;
+	src: url(../fonts/cutefont-regular.ttf);
+}
+
+@font-face {
+	font-family: witchy;
+	src: url(../fonts/witchy-whiskers-free.otf);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box; /* 1 */
+}
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+	display: block;
+}
+img {
+	vertical-align: middle;
+	border-style: none; /* Remove the border on images inside links in IE 10-. */
+}
+html {
+	font-family: cute;
+	line-height: 1.2;
+	font-size: 0.694444444vw;
+}
+body {
+	margin: 0;
+	font-family: cute;
+	font-size: 3.2rem;
+	font-weight: normal;
+	line-height: 1.1;
+	color: #ffffff;
+	background-color: #030503;
+}
+main {
+	overflow: hidden;
+}
+/******************************************************************/
+a {
+	color: inherit;
+	text-decoration: none;
+}
+#main {
+	position: relative;
+}
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.bg {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.logo {
+	position: absolute;
+	top: 3rem;
+	left: 3rem;
+	width: 13.1rem;
+}
+.btn {
+	height: 10rem;
+	background-size: 100% 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+	padding-left: 6.2rem;
+	padding-right: 4rem;
+	padding-bottom: 1rem;
+	text-decoration: none;
+	min-width: 16rem;
+	transition: all ease 0.4s;
+}
+.btn.btn-white {
+	background-image: url(../images/buy-now.png);
+}
+.btn.btn-green {
+	background-image: url(../images/presale.png);
+}
+.btn span {
+	font-family: witchy;
+	color: #000;
+	text-shadow: -0.2rem 0.1rem #49ff09;
+}
+a.btn:hover {
+	transform: scale(0.9);
+}
+.btn-center {
+	display: flex;
+	justify-content: center;
+	padding-right: 2rem;
+}
+.header-actions {
+	position: absolute;
+	top: 2rem;
+	right: 2.5rem;
+	display: flex;
+	align-items: center;
+}
+.header-actions .social {
+	width: 6rem;
+	height: 6rem;
+	display: block;
+	margin-left: 1.8rem;
+	margin-bottom: 1.5rem;
+	transition: all ease 0.4s;
+}
+.header-actions .social:hover {
+	transform: scale(0.9);
+}
+.main-hero {
+	position: absolute;
+	top: 4rem;
+	left: 1.5rem;
+	width: 72.9rem;
+	z-index: 20;
+}
+.main-content {
+	position: absolute;
+	z-index: 30;
+	right: 15rem;
+	top: 22rem;
+	width: 50rem;
+}
+.main-content .text {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.rainbow-bg {
+	position: absolute;
+	z-index: 19;
+	top: 51rem;
+	width: 105rem;
+	left: 19rem;
+}
+.rainbow-text {
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 98rem;
+	font-size: 6.3rem;
+	z-index: 20;
+	font-family: witchy;
+	text-transform: uppercase;
+}
+.rainbow-text span {
+	text-shadow: -0.2rem 0.1rem #49ff09;
+}
+.rainbow-text::before,
+.rainbow-text::after {
+	content: attr(content);
+	position: absolute;
+	left: 0;
+	right: 0;
+	/* color: transparent; */
+	-webkit-text-stroke: 1px #fff;
+	-webkit-text-fill-color: transparent;
+}
+.rainbow-text::before {
+	/* top: 0; */
+	top: -6rem;
+}
+.rainbow-text::after {
+	/* bottom: 0; */
+	bottom: -6rem;
+}
+.info-img-1 {
+	position: absolute;
+	top: 150rem;
+	width: 53rem;
+	left: 7.5rem;
+}
+.info-content-1 {
+	position: absolute;
+	top: 168rem;
+	width: 62rem;
+	right: 16rem;
+}
+.info-content-1 .text {
+	text-align: center;
+	color: #13fc2a;
+}
+.info-img-2 {
+	position: absolute;
+	width: 72rem;
+	right: 0;
+	top: 203rem;
+}
+
+.info-content-2 {
+	position: absolute;
+	top: 216rem;
+	left: 20rem;
+	width: 48rem;
+}
+.info-content-2 .text {
+	text-align: center;
+	color: #13fc2a;
+}
+.main-footer {
+	position: absolute;
+	width: 30.8rem;
+	left: 13rem;
+	bottom: 17.5rem;
+}
+.main-footer-shadow {
+	position: absolute;
+	left: 14rem;
+	bottom: 10.5rem;
+	width: 29rem;
+}
+.footer-socials {
+	display: flex;
+	column-gap: 4.7rem;
+	position: absolute;
+	left: 6rem;
+	bottom: 4rem;
+	color: #583b3b;
+}
+.copyright {
+	position: absolute;
+	right: 6rem;
+	bottom: 4rem;
+	color: #583b3b;
+}
